@@ -1,0 +1,129 @@
+@import url("https://fonts.googleapis.com/css2?family=Lexend+Deca:wght@600;700;800;900&display=swap");
+
+* {
+    margin: 0;
+}
+
+.App {
+    min-height: 100vh;
+    width: 100%;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    gap: 1em;
+    justify-content: center;
+    align-items: center;
+    font-size: 18px;
+    font-family: "Lexend Deca", sans-serif;
+    z-index: 1;
+}
+
+._styleimg {
+    width: 450px;
+    height: 450px;
+    background-color: rgb(212, 214, 214);
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border-radius: 20px;
+    opacity: 0.85;
+    padding: 10px;
+}
+
+.screenTimezone {
+    position: relative;
+    z-index: 2;
+}
+
+h1 {
+    font-size: 900;
+    font-weight: bold;
+}
+
+.screenTimezone > h1,
+h2 {
+    padding: 1rem;
+    opacity: 1;
+    text-align: center;
+}
+
+.screenTimezone > h2 {
+    font-size: 20px;
+    padding: 0px;
+    padding-bottom: 15px;
+}
+
+.img-container {
+    flex: 0 0 auto;
+}
+
+.mainp {
+    display: flex;
+}
+
+.reporEstadis h3 {
+    text-align: center;
+    padding-top: 0;
+    font-size: x-large;
+    line-height: 40px;
+}
+
+.reporEstadis {
+    flex: 1 1 auto;
+}
+
+.reporEstadis span {
+    text-align: left;
+    font-weight: normal;
+}
+
+.reporEstadis li {
+    width: 80%;
+    font-weight: bold;
+    justify-content: space-between;
+    display: flex;
+    line-height: 30px;
+}
+
+footer {
+    flex-direction: row;
+    margin-top: 1.6rem;
+    position: relative;
+}
+
+.btn_change {
+    opacity: 1;
+    background-color: rgb(247, 250, 248);
+    border-color: rgba(46, 45, 45, 0);
+    border-radius: 8px;
+    height: 2.8rem;
+    width: 140px;
+    display: block;
+    margin: 0 auto;
+    cursor: pointer;
+    box-shadow: 2px 2px 4px rgba(10, 11, 11, 3);
+    font-weight: bold;
+    font-size: 15px;
+}
+
+.dateTime {
+    font-size: 12px;
+    text-align: right;
+    padding-right: 60px;
+}
+
+footer h2 {
+    margin-bottom: 1.5rem;
+}
+
+@media (max-width: 470px) {
+    ._styleimg {
+        width: 340px;
+        height: 420px;
+    }
+
+    .reporEstadis li {
+        width: 100%;
+    }
+}
