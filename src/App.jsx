@@ -25,7 +25,12 @@ function App() {
             };
             setLatlon(obj);
         };
-        navigator.geolocation.getCurrentPosition(success);
+
+        const error = () => {
+            console.log(error);
+        };
+
+        navigator.geolocation.getCurrentPosition(success, error);
     }, []);
 
     useEffect(() => {
